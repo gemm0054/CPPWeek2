@@ -3,7 +3,8 @@
 
 using namespace std;
 
-class Vehicle{ 
+namespace CST8219 {
+	class Vehicle {
 	private:
 		int numWheels;
 		int numDoors;
@@ -24,10 +25,12 @@ class Vehicle{
 		~Vehicle() {
 			cout << "In destructor" << endl;
 		}
-};
+	};
+}
 
 int main(int argc, char **argv)
 {
-   cout << "Hello World!" << endl;
-   return 0;
+	CST8219::Vehicle myVehicle;
+	cout << "I made a Vehicle!" << endl;
+	return 0;
 }
