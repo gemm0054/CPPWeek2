@@ -38,8 +38,8 @@ int main(int argc, char **argv)
 	int w;
 	int d;
 	char c = 'a';
-	CST8219::Vehicle *pVehicle;
 	do {
+		CST8219::Vehicle* pVehicle;
 		cout << "enter number of doors" << endl;
 		if (!(cin >> d) || d <= 0) {
 			cout << "Enter a number greater than 0 for the doors" << endl;
