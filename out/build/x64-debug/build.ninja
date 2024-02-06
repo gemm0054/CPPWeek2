@@ -56,6 +56,13 @@ build CMakeFiles\hello.dir\week2.cpp.obj: CXX_COMPILER__hello_unscanned_Debug C$
   TARGET_COMPILE_PDB = CMakeFiles\hello.dir\
   TARGET_PDB = hello.pdb
 
+build CMakeFiles\hello.dir\Vehicle.cpp.obj: CXX_COMPILER__hello_unscanned_Debug C$:\Users\gemmx\Desktop\Level4\CPP\CPPWeek2\Vehicle.cpp || cmake_object_order_depends_target_hello
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\hello.dir
+  OBJECT_FILE_DIR = CMakeFiles\hello.dir
+  TARGET_COMPILE_PDB = CMakeFiles\hello.dir\
+  TARGET_PDB = hello.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hello
@@ -64,7 +71,7 @@ build CMakeFiles\hello.dir\week2.cpp.obj: CXX_COMPILER__hello_unscanned_Debug C$
 #############################################
 # Link the executable hello.exe
 
-build hello.exe: CXX_EXECUTABLE_LINKER__hello_Debug CMakeFiles\hello.dir\week2.cpp.obj
+build hello.exe: CXX_EXECUTABLE_LINKER__hello_Debug CMakeFiles\hello.dir\week2.cpp.obj CMakeFiles\hello.dir\Vehicle.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

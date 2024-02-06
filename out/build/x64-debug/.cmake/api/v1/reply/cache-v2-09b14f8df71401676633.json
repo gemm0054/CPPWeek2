@@ -1066,6 +1066,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "Week4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/gemmx/Desktop/Level4/CPP/CPPWeek2/out/build/x64-debug"
+		},
+		{
+			"name" : "Week4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Week4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/gemmx/Desktop/Level4/CPP/CPPWeek2"
+		},
+		{
 			"name" : "hello_BINARY_DIR",
 			"properties" : 
 			[

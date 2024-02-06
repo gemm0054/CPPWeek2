@@ -196,6 +196,15 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Week4_BINARY_DIR:STATIC=C:/Users/gemmx/Desktop/Level4/CPP/CPPWeek2/out/build/x64-debug
+
+//Value Computed by CMake
+Week4_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Week4_SOURCE_DIR:STATIC=C:/Users/gemmx/Desktop/Level4/CPP/CPPWeek2
+
+//Value Computed by CMake
 hello_BINARY_DIR:STATIC=C:/Users/gemmx/Desktop/Level4/CPP/CPPWeek2/out/build/x64-debug
 
 //Value Computed by CMake
