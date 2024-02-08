@@ -34,3 +34,49 @@ int Vehicle::getNumDoors() {
 void Vehicle::setNumDoors(int d) {
 	numDoors = d;
 }
+
+Vehicle& Vehicle::operator=(const Vehicle &copy) {
+	if (this != &copy) {
+		numWheels = copy.numWheels;
+		numDoors = copy.numDoors;
+	}
+	return *this;
+}
+bool Vehicle::operator==(const Vehicle &copy) {
+	if (numDoors == copy.numDoors && numWheels == copy.numWheels) {
+		return true;
+	}
+	return false;
+}
+bool Vehicle::operator!=(const Vehicle &copy) {
+	if (numDoors != copy.numDoors && numWheels != copy.numWheels) {
+		return true;
+	}
+	return false;
+}
+Vehicle Vehicle::operator++() {
+	++numWheels;
+	++numDoors;
+	return *this;
+}
+Vehicle Vehicle::operator++(int) {
+	Vehicle temp(*this);
+	++numWheels;
+	++numDoors;
+	return temp;
+}
+Vehicle Vehicle::operator--() {
+	--numWheels;
+	--numDoors;
+	return *this;
+}
+Vehicle Vehicle::operator--(int) {
+	Vehicle temp(*this);
+	--numWheels;
+	--numDoors;
+	return temp;
+}
+ostream& operator<<(ostream& os, const Vehicle& v) {
+	os << "Wheels: " << v.numWheels << " Doors: " << v.numDoors;
+	return os;
+}
